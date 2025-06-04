@@ -50,12 +50,12 @@ To model the probability of security incidents, the study constructs a **securit
 
 <div align="center">
 
-### **y = f(x; θ)**
+### **y = f(x; theta)**
 
 **Where:**
 - **y** = Probability of potential security incident occurring
 - **x** = Feature vector (user login behavior, system logs, network traffic patterns, security event parameters)  
-- **θ** = Learning parameters adjusted during training phase
+- **theta** = Learning parameters adjusted during training phase
 - **f** = Function defined by specific ML model architecture
 
 </div>
@@ -151,7 +151,7 @@ graph TB
         I[Support Vector Machine<br/>🎯 High-dimensional threat boundaries<br/>Accuracy: 85.3%]
         J[Random Forest<br/>🌲 Ensemble decision trees<br/>Strong recall: 89.2%]
         K[Deep Learning CNN<br/>🧠 Pattern recognition<br/>Accuracy: 87.6%, AUC: 0.89]
-        L[Logistic Regression<br/>📊 y = f(x;θ) implementation<br/>Probability prediction core]
+        L[Logistic Regression<br/>📊 y = f(x;theta) implementation<br/>Probability prediction core]
     end
     
     subgraph "Research Results & Output"
@@ -218,7 +218,7 @@ mindmap
       Research Result: 87.6% Accuracy
       AUC Score: 0.89
     Logistic Regression
-      Core Prediction Equation y=f(x;θ)
+      Core Prediction Equation y=f(x;theta)
       Probability Output
       Interpretable Results
       Research Foundation Model
@@ -291,7 +291,7 @@ Based on Chapter III research methodology for security incident prediction:
 
 | Variable | Type | Research Definition | Range | Distribution Pattern |
 |----------|------|-------------------|-------|---------------------|
-| **Threat Probability** | Continuous | Core y = f(x;θ) output | 0-1 | Research-validated probability |
+| **Threat Probability** | Continuous | Core y = f(x;theta) output | 0-1 | Research-validated probability |
 | **Risk Category** | Categorical | Security classification | LOW/MEDIUM/HIGH/CRITICAL | Enterprise-validated categories |
 | **Incident Prediction** | Binary | Security event likelihood | 0/1 | Binary classification target |
 | **Confidence Score** | Continuous | Model prediction confidence | 0-1 | Uncertainty quantification |
@@ -351,7 +351,7 @@ graph TB
 | **Rule-based Systems** | 78.5% | 74.1% | 76.3% | 75.2% | 0.79 | Limited adaptability to evolving threats |
 | **Support Vector Machine** | 85.3% | 82.7% | 89.2% | 85.8% | 0.87 | Strong generalization, robust to noise |
 | **Deep Learning CNN** | 87.6% | 84.8% | 86.4% | 85.6% | 0.89 | Spatial pattern recognition strength |
-| **Logistic Regression** | 84.2% | 81.5% | 83.1% | 82.3% | 0.85 | Core y = f(x;θ) implementation |
+| **Logistic Regression** | 84.2% | 81.5% | 83.1% | 82.3% | 0.85 | Core y = f(x;theta) implementation |
 | **🏆 BDT Ensemble** | **90.3%** | **88.5%** | **89.8%** | **89.1%** | **0.92** | **Research champion model** |
 
 ### 📈 **Research Parameter Optimization**
@@ -485,7 +485,7 @@ This ML model analysis successfully validates the **Chapter III: Leveraging Big 
 
 ### 📊 **Quantitative Research Achievements**
 - ✅ **90.3% Accuracy**: Exceeded traditional ISMS by 17.9%
-- ✅ **y = f(x;θ) Implementation**: Successfully deployed logistic regression core equation
+- ✅ **y = f(x;theta) Implementation**: Successfully deployed logistic regression core equation
 - ✅ **Multi-faceted Strategy**: Combined quantitative & qualitative analysis paradigms
 - ✅ **Enterprise Validation**: 5-sector, 100GB+ real-world dataset validation
 
