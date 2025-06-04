@@ -217,14 +217,26 @@ xychart-beta
 ### 🔄 **Variable Relationships**
 
 ```mermaid
-sankey-beta
-    "High Severity Events,45" "HIGH Risk,35"
-    "High Severity Events,45" "CRITICAL Risk,10"
-    "Medium Severity Events,120" "MEDIUM Risk,80"
-    "Medium Severity Events,120" "HIGH Risk,25"
-    "Medium Severity Events,120" "LOW Risk,15"
-    "Low Severity Events,200" "LOW Risk,180"
-    "Low Severity Events,200" "MEDIUM Risk,20"
+flowchart TD
+    A[High Severity Events<br/>45 incidents] --> B[HIGH Risk: 35]
+    A --> C[CRITICAL Risk: 10]
+    
+    D[Medium Severity Events<br/>120 incidents] --> E[MEDIUM Risk: 80]
+    D --> F[HIGH Risk: 25]
+    D --> G[LOW Risk: 15]
+    
+    H[Low Severity Events<br/>200 incidents] --> I[LOW Risk: 180]
+    H --> J[MEDIUM Risk: 20]
+    
+    classDef high fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
+    classDef medium fill:#fff9c4,stroke:#f57f17,stroke-width:2px
+    classDef low fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
+    classDef critical fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    
+    class A,B,F high
+    class D,E,J medium
+    class H,I,G low
+    class C critical
 ```
 
 ---
@@ -694,7 +706,7 @@ xychart-beta
 ```mermaid
 graph TB
     subgraph "Selection Criteria"
-        A[Performance: 40%<br/>📊 Accuracy, F1-Score]
+        A[Performance: 40%<br/>�� Accuracy, F1-Score]
         B[Speed: 25%<br/>⚡ Training & Inference]
         C[Interpretability: 20%<br/>🔍 Explainability]
         D[Scalability: 15%<br/>📈 Data Volume Handling]
