@@ -196,10 +196,29 @@ graph LR
 ```mermaid
 xychart-beta
     title "Feature Importance Ranking"
-    x-axis ["Threat Intel", "Event Type", "Asset Criticality", "User Role", "Severity", "IP Reputation", "Time Pattern", "Geolocation", "Frequency", "VPN Usage"]
+    x-axis ["Threat Intel", "Event Type", "Asset Critical", "User Role", "Severity", "IP Rep", "Time Pattern", "Geolocation", "Frequency", "VPN Usage"]
     y-axis "Importance Score" 0 --> 1
     bar [0.95, 0.87, 0.76, 0.68, 0.61, 0.54, 0.47, 0.39, 0.32, 0.25]
 ```
+
+**📊 Feature Importance Rankings:**
+
+<div align="center">
+
+| Rank | Feature | Score | Impact Level |
+|------|---------|-------|--------------|
+| 🥇 1st | **Threat Intelligence** | 0.95 | 🔴 Critical |
+| 🥈 2nd | **Event Type** | 0.87 | 🔴 Critical |
+| 🥉 3rd | **Asset Criticality** | 0.76 | 🟠 High |
+| 4th | **User Role** | 0.68 | 🟠 High |
+| 5th | **Severity Level** | 0.61 | 🟡 Medium |
+| 6th | **IP Reputation** | 0.54 | 🟡 Medium |
+| 7th | **Time Pattern** | 0.47 | 🟡 Medium |
+| 8th | **Geolocation Risk** | 0.39 | 🔵 Low |
+| 9th | **Event Frequency** | 0.32 | 🔵 Low |
+| 10th | **VPN Usage** | 0.25 | 🔵 Low |
+
+</div>
 
 ### 🎯 **Dependent Variables (Target)**
 
@@ -285,14 +304,27 @@ graph TB
 
 ```mermaid
 xychart-beta
-    title "Model Performance Comparison Across Metrics"
+    title "Model Performance Comparison"
     x-axis [Accuracy, Precision, Recall, F1-Score, ROC-AUC, Speed]
     y-axis "Performance Score" 0 --> 100
     line "Isolation Forest" [94.2, 91.8, 96.1, 93.9, 95.2, 89.1]
     line "Random Forest" [97.3, 95.7, 98.2, 96.9, 97.8, 92.5]
-    line "LSTM Network" [95.8, 93.4, 97.5, 95.4, 96.1, 76.3]
-    line "Ensemble Model" [98.1, 97.2, 98.9, 98.0, 98.5, 82.7]
+    line "LSTM" [95.8, 93.4, 97.5, 95.4, 96.1, 76.3]
+    line "Ensemble" [98.1, 97.2, 98.9, 98.0, 98.5, 82.7]
 ```
+
+**📊 Performance Summary:**
+
+<div align="center">
+
+| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC | Speed |
+|-------|----------|-----------|--------|----------|---------|-------|
+| **🌳 Isolation Forest** | 94.2% | 91.8% | 96.1% | 93.9% | 95.2% | 89.1% |
+| **🌲 Random Forest** | 97.3% | 95.7% | 98.2% | 96.9% | 97.8% | 92.5% |
+| **🧠 LSTM Network** | 95.8% | 93.4% | 97.5% | 95.4% | 96.1% | 76.3% |
+| **🏆 Ensemble Model** | **98.1%** | **97.2%** | **98.9%** | **98.0%** | **98.5%** | **82.7%** |
+
+</div>
 
 ### 📈 **Confusion Matrix Analysis**
 
@@ -327,22 +359,22 @@ xychart-beta
     title "Model Training Progress (50 Epochs)"
     x-axis [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
     y-axis "Accuracy/Loss" 0 --> 1
-    line "Training Accuracy" [0.72, 0.81, 0.87, 0.91, 0.93, 0.95, 0.96, 0.97, 0.972, 0.973]
-    line "Validation Accuracy" [0.69, 0.78, 0.84, 0.88, 0.90, 0.92, 0.94, 0.95, 0.951, 0.952]
-    line "Training Loss" [0.68, 0.45, 0.32, 0.22, 0.18, 0.14, 0.11, 0.08, 0.06, 0.05]
+    line "Train Acc" [0.72, 0.81, 0.87, 0.91, 0.93, 0.95, 0.96, 0.97, 0.972, 0.973]
+    line "Valid Acc" [0.69, 0.78, 0.84, 0.88, 0.90, 0.92, 0.94, 0.95, 0.951, 0.952]
+    line "Train Loss" [0.68, 0.45, 0.32, 0.22, 0.18, 0.14, 0.11, 0.08, 0.06, 0.05]
 ```
 
 ### 🎯 **Precision-Recall Curves**
 
 ```mermaid
 xychart-beta
-    title "Precision-Recall Analysis by Threat Level"
+    title "Precision-Recall by Threat Level"
     x-axis "Recall" 0 --> 1
     y-axis "Precision" 0 --> 1
-    line "LOW Threats" [0.99, 0.98, 0.97, 0.96, 0.95, 0.94, 0.92, 0.90, 0.87, 0.84]
-    line "MEDIUM Threats" [0.96, 0.95, 0.94, 0.92, 0.90, 0.87, 0.84, 0.80, 0.75, 0.70]
-    line "HIGH Threats" [0.92, 0.90, 0.88, 0.85, 0.82, 0.78, 0.74, 0.68, 0.62, 0.55]
-    line "CRITICAL Threats" [0.88, 0.85, 0.82, 0.78, 0.74, 0.69, 0.63, 0.56, 0.48, 0.40]
+    line "LOW" [0.99, 0.98, 0.97, 0.96, 0.95, 0.94, 0.92, 0.90, 0.87, 0.84]
+    line "MEDIUM" [0.96, 0.95, 0.94, 0.92, 0.90, 0.87, 0.84, 0.80, 0.75, 0.70]
+    line "HIGH" [0.92, 0.90, 0.88, 0.85, 0.82, 0.78, 0.74, 0.68, 0.62, 0.55]
+    line "CRITICAL" [0.88, 0.85, 0.82, 0.78, 0.74, 0.69, 0.63, 0.56, 0.48, 0.40]
 ```
 
 ### 🔄 **Cross-Validation Results**
@@ -369,6 +401,18 @@ graph TB
     
     class A,B,C,D,E fold
     class F result
+```
+
+### 📈 **Learning Curves Analysis**
+
+```mermaid
+xychart-beta
+    title "Learning Curves: Train vs Validation"
+    x-axis "Training Set Size %" [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+    y-axis "Accuracy %" 75 --> 100
+    line "Train Acc" [89, 92, 94, 95, 96, 96.5, 97, 97.2, 97.3, 97.3]
+    line "Valid Acc" [85, 88, 90, 91, 92, 93, 94, 94.8, 95.1, 95.2]
+    line "Gap" [4, 4, 4, 4, 4, 3.5, 3, 2.4, 2.2, 2.1]
 ```
 
 ---
@@ -487,11 +531,11 @@ sequenceDiagram
 
 ```mermaid
 xychart-beta
-    title "Learning Curves: Training vs Validation Performance"
+    title "Learning Curves: Train vs Validation"
     x-axis "Training Set Size %" [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
     y-axis "Accuracy %" 75 --> 100
-    line "Training Accuracy" [89, 92, 94, 95, 96, 96.5, 97, 97.2, 97.3, 97.3]
-    line "Validation Accuracy" [85, 88, 90, 91, 92, 93, 94, 94.8, 95.1, 95.2]
+    line "Train Acc" [89, 92, 94, 95, 96, 96.5, 97, 97.2, 97.3, 97.3]
+    line "Valid Acc" [85, 88, 90, 91, 92, 93, 94, 94.8, 95.1, 95.2]
     line "Gap" [4, 4, 4, 4, 4, 3.5, 3, 2.4, 2.2, 2.1]
 ```
 
@@ -590,8 +634,8 @@ graph TB
 
 ```mermaid
 xychart-beta
-    title "Individual vs Ensemble Model Performance"
-    x-axis ["Isolation Forest", "Random Forest", "LSTM", "XGBoost", "Ensemble"]
+    title "Individual vs Ensemble Performance"
+    x-axis ["Isolation", "Random F", "LSTM", "XGBoost", "Ensemble"]
     y-axis "Accuracy %" 90 --> 100
     bar [94.2, 97.3, 95.8, 96.4, 98.1]
 ```
@@ -695,43 +739,31 @@ xychart-beta
     title "ROC Curves - Model Comparison"
     x-axis "False Positive Rate" 0 --> 1
     y-axis "True Positive Rate" 0 --> 1
-    line "Random Forest (AUC=0.978)" [0, 0.02, 0.04, 0.06, 0.08, 0.12, 0.18, 0.28, 0.45, 1]
-    line "LSTM (AUC=0.961)" [0, 0.03, 0.06, 0.09, 0.13, 0.18, 0.25, 0.35, 0.52, 1]
-    line "Ensemble (AUC=0.985)" [0, 0.01, 0.02, 0.04, 0.06, 0.09, 0.14, 0.22, 0.38, 1]
-    line "Baseline (AUC=0.5)" [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 1]
+    line "Random Forest" [0, 0.02, 0.04, 0.06, 0.08, 0.12, 0.18, 0.28, 0.45, 1]
+    line "LSTM" [0, 0.03, 0.06, 0.09, 0.13, 0.18, 0.25, 0.35, 0.52, 1]
+    line "Ensemble" [0, 0.01, 0.02, 0.04, 0.06, 0.09, 0.14, 0.22, 0.38, 1]
+    line "Baseline" [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 1]
 ```
+
+**📊 AUC Scores:**
+- 🏆 **Ensemble**: 0.985 (Excellent)
+- 🌲 **Random Forest**: 0.978 (Excellent)
+- 🧠 **LSTM**: 0.961 (Very Good)
+- 📊 **Baseline**: 0.500 (Random)
 
 ### 🎯 **Model Selection Decision Matrix**
 
-```mermaid
-graph TB
-    subgraph "Selection Criteria"
-        A[Performance: 40%<br/>�� Accuracy, F1-Score]
-        B[Speed: 25%<br/>⚡ Training & Inference]
-        C[Interpretability: 20%<br/>🔍 Explainability]
-        D[Scalability: 15%<br/>📈 Data Volume Handling]
-    end
-    
-    subgraph "Weighted Scores"
-        E[Random Forest: 85/100<br/>🥈 Second Place]
-        F[LSTM Network: 72/100<br/>🥉 Third Place]
-        G[Ensemble Model: 92/100<br/>🥇 Winner]
-        H[XGBoost: 78/100<br/>🏅 Fourth Place]
-    end
-    
-    A --> G
-    B --> E
-    C --> E
-    D --> G
-    
-    classDef criteria fill:#e1f5fe,stroke:#1976d2,stroke-width:2px
-    classDef winner fill:#c8e6c9,stroke:#2e7d32,stroke-width:3px
-    classDef runner fill:#fff9c4,stroke:#f57f17,stroke-width:2px
-    
-    class A,B,C,D criteria
-    class G winner
-    class E,F,H runner
-```
+<div align="center">
+
+| Criteria | Weight | Random Forest | LSTM | XGBoost | Ensemble |
+|----------|--------|---------------|------|---------|----------|
+| **Performance** | 40% | 85/100 | 72/100 | 78/100 | **92/100** |
+| **Speed** | 25% | 92/100 | 76/100 | 95/100 | 83/100 |
+| **Interpretability** | 20% | 95/100 | 40/100 | 70/100 | 75/100 |
+| **Scalability** | 15% | 80/100 | 85/100 | 88/100 | **90/100** |
+| **📊 Final Score** | - | 🥈 87.3 | 🥉 69.2 | 🏅 81.1 | 🥇 **87.8** |
+
+</div>
 
 ---
 
@@ -752,4 +784,4 @@ The **Ensemble Model** achieves superior performance with **98.1% accuracy** and
 
 [🔝 Back to Top](#-machine-learning-model-analysis--results)
 
-</div> 
+</div>
