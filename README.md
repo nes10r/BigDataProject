@@ -297,11 +297,11 @@ graph TB
         ML1[Support Vector Machine<br/>🎯 High-dimensional Threat Boundaries]
         ML2[Random Forest<br/>🌲 Ensemble Decision Trees]
         ML3[Deep Learning CNN<br/>🧠 Pattern Recognition]
-        ML4[Logistic Regression<br/>📊 Probability Prediction]
+        ML4[Logistic Regression<br/>📊 Probability Prediction<br/>Core ML Model]
     end
     
     subgraph "Decision & Response Layer"
-        DR1[Real-time Prediction<br/>⚡ y = f(x;theta)]
+        DR1[Real-time Prediction<br/>⚡ ML-driven analysis]
         DR2[Automated Defense<br/>🛡️ Firewall Rules, Access Control]
         DR3[Forensic Protocols<br/>🔍 Investigation & Analysis]
     end
@@ -482,7 +482,7 @@ python scripts/setup_research_environment.py
 
 #### **1. Threat Prediction Model (Logistic Regression)**
 ```python
-# Implementation of research equation: y = f(x;theta)
+# Implementation of research equation for threat prediction
 from models.threat_prediction import LogisticThreatPredictor
 
 predictor = LogisticThreatPredictor(
@@ -692,7 +692,7 @@ graph TB
     subgraph "Executive Dashboard"
         A[Security Posture Score: 90.3%<br/>📊 Research-validated Accuracy]
         B[Active Incidents: Real-time Monitoring<br/>🚨 Multi-enterprise Data]
-        C[Threat Predictions: ML-driven<br/>📈 y = f(x;theta) Implementation]
+        C[Threat Predictions: ML-driven<br/>📈 Advanced Analytics]
         D[Compliance Status: Cross-industry<br/>✅ Regulatory Alignment]
     end
     
@@ -758,7 +758,7 @@ graph TB
         E[Support Vector Machine<br/>🎯 High-dimensional Boundaries<br/>Accuracy: 85.3%]
         F[Random Forest<br/>🌲 Ensemble Decision Trees<br/>Robustness to Noise]
         G[Deep Learning CNN<br/>🧠 Pattern Recognition<br/>Accuracy: 87.6%]
-        H[Logistic Regression<br/>📊 y = f(x;theta)<br/>Probability Prediction]
+        H[Logistic Regression<br/>📊 Probability Prediction<br/>Core ML Model]
     end
     
     subgraph "Ensemble Integration"
@@ -930,7 +930,7 @@ Content-Type: application/json
     "network_traffic_patterns": {...},
     "security_event_parameters": {...}
   },
-  "model_type": "logistic_regression"  // y = f(x;theta)
+  "model_type": "logistic_regression"  // Core prediction model
 }
 
 Response: {

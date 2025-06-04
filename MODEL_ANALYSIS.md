@@ -148,10 +148,10 @@ graph TB
     end
     
     subgraph "ML Model Ensemble - Chapter III Research"
-        I[Support Vector Machine<br/>🎯 High-dimensional threat boundaries<br/>Accuracy: 85.3%]
+        I[Support Vector Machine<br/>🎯 High-dimensional boundaries<br/>Accuracy: 85.3%]
         J[Random Forest<br/>🌲 Ensemble decision trees<br/>Strong recall: 89.2%]
-        K[Deep Learning CNN<br/>🧠 Pattern recognition<br/>Accuracy: 87.6%, AUC: 0.89]
-        L[Logistic Regression<br/>📊 y = f(x;theta) implementation<br/>Probability prediction core]
+        K[Deep Learning CNN<br/>🧠 Pattern recognition<br/>Accuracy: 87.6%]
+        L[Logistic Regression<br/>📊 Core prediction model<br/>Probability output]
     end
     
     subgraph "Research Results & Output"
@@ -201,27 +201,27 @@ graph TB
 
 ```mermaid
 mindmap
-  root((Chapter III Model Selection))
+  root((Chapter III Models))
     Support Vector Machine
-      High-dimensional Data Excellence
-      Robust to Noise & Outliers
+      High-dimensional Data
+      Robust to Noise
       Strong Generalization
-      Research Result: 85.3% Accuracy
+      Research Result 85.3%
     Random Forest
-      Feature Importance Analysis
+      Feature Importance
       Handles Missing Values
-      Ensemble Method Robustness
-      Research Result: 89.2% Recall
+      Ensemble Method
+      Research Result 89.2%
     Deep Learning CNN
-      Spatial Pattern Recognition
+      Pattern Recognition
       Complex Attack Detection
-      Research Result: 87.6% Accuracy
-      AUC Score: 0.89
+      Research Result 87.6%
+      AUC Score 0.89
     Logistic Regression
-      Core Prediction Equation y=f(x;theta)
+      Core Prediction Equation
       Probability Output
       Interpretable Results
-      Research Foundation Model
+      Research Foundation
 ```
 
 ---
