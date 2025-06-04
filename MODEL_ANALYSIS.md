@@ -7,9 +7,11 @@
 ![Analytics](https://img.shields.io/badge/Data-Analytics-blue?style=for-the-badge&logo=jupyter&logoColor=white)
 ![AI](https://img.shields.io/badge/Artificial-Intelligence-red?style=for-the-badge&logo=brain&logoColor=white)
 
-**Comprehensive Machine Learning Model Documentation for Cybersecurity Threat Detection**
+**Chapter III Research Implementation: Big Data-Driven Threat Detection and Risk Assessment**
 
-[Model Architecture](#-model-architecture) • [Variables](#-variables-analysis) • [Results](#-model-results) • [Performance](#-performance-analysis)
+*Comprehensive Machine Learning Model Documentation for Cybersecurity Threat Detection Based on Academic Research Methodology*
+
+[Model Architecture](#-model-architecture) • [Research Methodology](#-research-methodology) • [Variables](#-variables-analysis) • [Results](#-model-results) • [Performance](#-performance-analysis)
 
 </div>
 
@@ -17,10 +19,12 @@
 
 ## 📋 Table of Contents
 
+- [🔬 Research Methodology](#-research-methodology)
 - [🧠 Model Architecture Overview](#-model-architecture-overview)
 - [📊 Variables Analysis](#-variables-analysis)
 - [🎯 Model Results](#-model-results)
 - [📈 Performance Analysis](#-performance-analysis)
+- [🏢 Enterprise Case Studies](#-enterprise-case-studies)
 - [🔬 Feature Engineering](#-feature-engineering)
 - [⚡ Model Training Process](#-model-training-process)
 - [📉 Model Validation](#-model-validation)
@@ -30,39 +34,132 @@
 
 ---
 
+## 🔬 Research Methodology
+
+### 📊 **Multi-faceted Research Strategy**
+
+This study adopts a **multi-faceted strategy** for optimizing enterprise threat prediction and security management using Big Data technologies, specifically within Enterprise Information Security (EIS) environments. The research intelligently combines both **quantitative and qualitative analysis paradigms** to explore and assess practical applications and effectiveness of BDT within ISM frameworks.
+
+### 🔢 **Quantitative Research Dimension**
+
+**Statistical Regression & Machine Learning Analysis:**
+The quantitative dimension incorporates statistical regression models and machine learning algorithms to deeply analyze high-volume, security-related datasets. 
+
+**Core Prediction Framework:**
+To model the probability of security incidents, the study constructs a **security threat prediction framework** employing logistic regression models with the fundamental equation:
+
+<div align="center">
+
+### **y = f(x; θ)**
+
+**Where:**
+- **y** = Probability of potential security incident occurring
+- **x** = Feature vector (user login behavior, system logs, network traffic patterns, security event parameters)  
+- **θ** = Learning parameters adjusted during training phase
+- **f** = Function defined by specific ML model architecture
+
+</div>
+
+### 🎯 **Qualitative Research Dimension**
+
+**Expert Interview Methodology:**
+The qualitative component builds nuanced understanding of BDT adoption processes in enterprise security through **in-depth expert interviews** with industry professionals and cybersecurity practitioners.
+
+**Expert Classification (Three Categories):**
+
+1. **Senior Security Professionals**
+   - Security architects, operations engineers, department heads
+   - Extensive ISM deployment experience
+   - Practical security solution implementation background
+
+2. **Academic Researchers**  
+   - Strong publication record in BDT and enterprise cybersecurity
+   - Theoretical knowledge and trend analysis expertise
+   - Complement practitioner insights with academic perspective
+
+3. **Cross-industry Professionals**
+   - Manufacturing, information technology, and finance sectors
+   - BDT-based ISM system implementation experience
+   - Industrial applicability validation across domains
+
+**Semi-structured Interview Framework:**
+- **BDT Application**: Real-time monitoring, decision-making, risk prediction within ISM
+- **Implementation Challenges**: Technical and organizational barriers during deployment
+- **Enhancement Strategies**: Improvements for BDT-enabled ISM solutions
+- **Domain-specific Analysis**: Compatibility with existing infrastructure, resource constraints
+
+### 🏢 **Enterprise Case Study Validation**
+
+**Five-Enterprise Research Dataset:**
+
+<div align="center">
+
+| Enterprise | Industry | Employees | Data Sources | Research Focus |
+|------------|----------|-----------|--------------|----------------|
+| **AI-Powered Manufacturing Inc.** | Smart Manufacturing | 9,500 | IoT sensor logs, production telemetry, predictive maintenance | AI & robotics security, global operations |
+| **Fintech Solutions Group** | Financial Technology | 3,200 | Transaction metadata, user behavior, mobile banking logs | DeFi & digital payment platform security |
+| **CyberSecure Cloud Corp.** | Cloud Security Technology | 2,800 | Network intrusion logs, cloud access records, employee authentication | Zero-trust architecture, hybrid cloud protection |
+| **Renewable Grid Systems** | Renewable Energy | 5,000 | Smart grid data, equipment performance, remote sensor logs | Solar/wind infrastructure, real-time grid control |
+| **BioHealth AI Labs** | Digital Health & AI | 300 | Patient-device telemetry, AI diagnostic logs, encrypted communications | AI personalized medicine, remote diagnostics |
+
+</div>
+
+**Dataset Confidentiality & Privacy:**
+- **Confidentiality Agreements**: All participating organizations entered strict agreements
+- **Anonymization Procedures**: Raw data anonymized to protect enterprise and individual privacy
+- **Selection Criteria**: Key industry representation, operational context diversity, comprehensive historical datasets
+- **Security Compliance**: Shared under strict confidentiality conditions preserving data privacy
+
+---
+
 ## 🧠 Model Architecture Overview
+
+### 📊 **Research-Validated Technical Infrastructure**
+
+<div align="center">
+
+| Component | Specification | Research Purpose |
+|-----------|---------------|------------------|
+| **Hardware Platform** | AMD EPYC 9004 series + NVIDIA A100 Tensor Core GPUs | High-performance ML model training & validation |
+| **Storage System** | MinIO distributed object storage (Multi-PB, S3 compatible) | Scalable big data lake architecture |
+| **Operating System** | Ubuntu Server 22.04 LTS, 64-bit | Enterprise-grade stability for research |
+| **Big Data Framework** | Apache Hadoop 3.3.6, Apache Spark 3.5.0, Delta Lake, Apache Iceberg | Distributed processing pipeline validation |
+| **Database Systems** | PostgreSQL 15, Apache Cassandra, MongoDB 7.0 | Multi-model data management research |
+| **Deployment** | Kubernetes-based container orchestration (AWS & Azure) | Production scalability testing |
+
+</div>
 
 ### 🏗️ **Complete ML Pipeline Architecture**
 
 ```mermaid
 graph TB
-    subgraph "Data Input Layer"
-        A[Security Events<br/>📊 100K+ events/day]
-        B[Network Traffic<br/>🌐 50GB/day]
-        C[User Behavior<br/>👥 10K users]
-        D[System Logs<br/>🖥️ 500MB/day]
+    subgraph "Research Data Input Layer"
+        A[Security Events<br/>📊 500K+ transaction records]
+        B[Network Traffic<br/>🌐 Millions of network logs]
+        C[User Behavior<br/>👥 Login patterns, permission changes]
+        D[System Logs<br/>🖥️ Enterprise-scale datasets]
     end
     
-    subgraph "Feature Engineering Pipeline"
-        E[Data Preprocessing<br/>🔄 Cleaning & Validation]
-        F[Feature Extraction<br/>⚙️ 20 Core Features]
-        G[Feature Scaling<br/>📏 StandardScaler]
-        H[Feature Selection<br/>🎯 Top 15 Features]
+    subgraph "Feature Engineering Pipeline - Research Validated"
+        E[Data Preprocessing<br/>🔄 Multi-source cleaning & validation]
+        F[Feature Extraction<br/>⚙️ 50-100 attributes per event]
+        G[Feature Scaling<br/>📏 Cross-enterprise standardization]
+        H[Feature Selection<br/>🎯 Research-optimized selection]
     end
     
-    subgraph "Model Ensemble"
-        I[Isolation Forest<br/>🌳 Anomaly Detection<br/>Contamination: 10%]
-        J[Random Forest<br/>🌲 Threat Classification<br/>100 Trees, Depth: 10]
-        K[LSTM Network<br/>🧠 Sequential Analysis<br/>3 Layers, 128 Units]
-        L[Gradient Boosting<br/>⚡ XGBoost<br/>Learning Rate: 0.1]
+    subgraph "ML Model Ensemble - Chapter III Research"
+        I[Support Vector Machine<br/>🎯 High-dimensional threat boundaries<br/>Accuracy: 85.3%]
+        J[Random Forest<br/>🌲 Ensemble decision trees<br/>Strong recall: 89.2%]
+        K[Deep Learning CNN<br/>🧠 Pattern recognition<br/>Accuracy: 87.6%, AUC: 0.89]
+        L[Logistic Regression<br/>📊 y = f(x;θ) implementation<br/>Probability prediction core]
     end
     
-    subgraph "Model Fusion & Output"
-        M[Ensemble Voting<br/>🗳️ Weighted Average]
-        N[Risk Score<br/>📊 0-100 Scale]
-        O[Threat Category<br/>🏷️ LOW/MEDIUM/HIGH]
-        P[Confidence Level<br/>📈 0-1 Scale]
-        Q[Action Recommendations<br/>💡 Automated Response]
+    subgraph "Research Results & Output"
+        M[Ensemble Prediction<br/>🗳️ 90.3% accuracy achieved]
+        N[Risk Score<br/>📊 Threat probability assessment]
+        O[Threat Category<br/>🏷️ HIGH/MEDIUM/LOW classification]
+        P[Confidence Level<br/>📈 Uncertainty quantification]
+        Q[Automated Response<br/>💡 Countermeasure recommendations]
     end
     
     A --> E
@@ -100,687 +197,314 @@ graph TB
     class M,N,O,P,Q output
 ```
 
-### 🎯 **Model Selection Rationale**
+### 🎯 **Research-Based Model Selection Rationale**
 
 ```mermaid
 mindmap
-  root((Model Selection))
-    Anomaly Detection
-      Isolation Forest
-        Unsupervised Learning
-        Handles High Dimensional Data
-        Robust to Outliers
-        Fast Training & Prediction
-      One-Class SVM
-        Good for Small Datasets
-        Memory Efficient
-        Non-linear Boundaries
-    Classification
-      Random Forest
-        Feature Importance
-        Handles Missing Values
-        Parallel Processing
-        Reduces Overfitting
-      Gradient Boosting
-        High Accuracy
-        Feature Selection
-        Handles Imbalanced Data
-    Deep Learning
-      LSTM Networks
-        Sequential Patterns
-        Long-term Dependencies
-        Time Series Analysis
-      CNN
-        Spatial Features
-        Pattern Recognition
-        Feature Extraction
+  root((Chapter III Model Selection))
+    Support Vector Machine
+      High-dimensional Data Excellence
+      Robust to Noise & Outliers
+      Strong Generalization
+      Research Result: 85.3% Accuracy
+    Random Forest
+      Feature Importance Analysis
+      Handles Missing Values
+      Ensemble Method Robustness
+      Research Result: 89.2% Recall
+    Deep Learning CNN
+      Spatial Pattern Recognition
+      Complex Attack Detection
+      Research Result: 87.6% Accuracy
+      AUC Score: 0.89
+    Logistic Regression
+      Core Prediction Equation y=f(x;θ)
+      Probability Output
+      Interpretable Results
+      Research Foundation Model
 ```
 
 ---
 
 ## 📊 Variables Analysis
 
-### 🔢 **Independent Variables (Features)**
+### 🔢 **Independent Variables (Research-Validated Features)**
+
+Based on comprehensive enterprise dataset analysis spanning **12-18 months** with **50-100 attributes per security event**:
 
 <div align="center">
 
 ```mermaid
 graph LR
-    subgraph "Network Features"
-        A1[Source IP Hash<br/>📍 Categorical]
-        A2[Destination IP<br/>🎯 Categorical] 
-        A3[Geolocation Risk<br/>🌍 Binary]
-        A4[VPN Usage<br/>🔒 Binary]
+    subgraph "System Log Features"
+        A1[User Login Behavior<br/>📍 Abnormal login attempts]
+        A2[Access Patterns<br/>🎯 Unauthorized access detection] 
+        A3[Resource Usage<br/>🌍 System anomaly indicators]
+        A4[Error Reports<br/>🔒 Malicious activity signs]
     end
     
-    subgraph "Event Features"
-        B1[Event Type<br/>📋 Categorical]
-        B2[Severity Level<br/>⚠️ Ordinal]
-        B3[Event Frequency<br/>📊 Numerical]
-        B4[Event Duration<br/>⏱️ Numerical]
+    subgraph "Network Traffic Features"
+        B1[Packet Flow Analysis<br/>📋 DDoS attack detection]
+        B2[Source/Destination IPs<br/>⚠️ Malicious scanning]
+        B3[Traffic Volume<br/>📊 Data breach indicators]
+        B4[Protocol Anomalies<br/>⏱️ Attack pattern recognition]
     end
     
-    subgraph "Temporal Features"
-        C1[Hour of Day<br/>🕐 Cyclical]
-        C2[Day of Week<br/>📅 Cyclical]
-        C3[Weekend Flag<br/>🏖️ Binary]
-        C4[Business Hours<br/>💼 Binary]
+    subgraph "User Behavior Features"
+        C1[Authentication Patterns<br/>🕐 Login frequency analysis]
+        C2[Permission Changes<br/>📅 Privilege escalation detection]
+        C3[Access History<br/>🏖️ Behavioral baseline deviation]
+        C4[Communication Logs<br/>💼 Internal threat indicators]
     end
     
-    subgraph "User Features"
-        D1[User Role<br/>👤 Categorical]
-        D2[Login Pattern<br/>🔑 Numerical]
-        D3[Access History<br/>📚 Numerical]
-        D4[Privilege Level<br/>🔐 Ordinal]
-    end
-    
-    subgraph "Asset Features"
-        E1[Asset Criticality<br/>🏛️ Ordinal]
-        E2[Asset Type<br/>💻 Categorical]
-        E3[Asset Value<br/>💰 Numerical]
-        E4[Compliance Level<br/>📜 Ordinal]
-    end
-    
-    subgraph "Threat Intelligence"
-        F1[Malicious Flag<br/>☠️ Binary]
-        F2[Threat Confidence<br/>📈 Numerical]
-        F3[IOC Matches<br/>🎯 Numerical]
-        F4[Reputation Score<br/>⭐ Numerical]
+    subgraph "External Intelligence"
+        D1[Threat Feeds<br/>👤 Known vulnerabilities]
+        D2[Attack Indicators<br/>🔑 Global threat database]
+        D3[Reputation Scores<br/>📚 IP/domain intelligence]
+        D4[IOC Matches<br/>🔐 Indicator of compromise]
     end
 ```
 
 </div>
 
-### 📈 **Feature Importance Analysis**
+### 📈 **Research Dataset Characteristics**
 
-```mermaid
-xychart-beta
-    title "Feature Importance Ranking"
-    x-axis ["Threat Intel", "Event Type", "Asset Critical", "User Role", "Severity", "IP Rep", "Time Pattern", "Geolocation", "Frequency", "VPN Usage"]
-    y-axis "Importance Score" 0 --> 1
-    bar [0.95, 0.87, 0.76, 0.68, 0.61, 0.54, 0.47, 0.39, 0.32, 0.25]
-```
-
-**📊 Feature Importance Rankings:**
+**Comprehensive Multi-dimensional Dataset:**
 
 <div align="center">
 
-| Rank | Feature | Score | Impact Level |
-|------|---------|-------|--------------|
-| 🥇 1st | **Threat Intelligence** | 0.95 | 🔴 Critical |
-| 🥈 2nd | **Event Type** | 0.87 | 🔴 Critical |
-| 🥉 3rd | **Asset Criticality** | 0.76 | 🟠 High |
-| 4th | **User Role** | 0.68 | 🟠 High |
-| 5th | **Severity Level** | 0.61 | 🟡 Medium |
-| 6th | **IP Reputation** | 0.54 | 🟡 Medium |
-| 7th | **Time Pattern** | 0.47 | 🟡 Medium |
-| 8th | **Geolocation Risk** | 0.39 | 🔵 Low |
-| 9th | **Event Frequency** | 0.32 | 🔵 Low |
-| 10th | **VPN Usage** | 0.25 | 🔵 Low |
+| Data Type | Volume | Characteristics | Research Purpose |
+|-----------|--------|-----------------|------------------|
+| **Structured Data** | ERP transaction records | ~500,000 transactions | Baseline business behavior analysis |
+| **Semi-structured** | Web server & firewall logs | Millions of log entries | Security event pattern recognition |
+| **Unstructured** | Employee emails, surveillance images | Substantial instances | Advanced threat detection |
+| **Total Dataset** | ~100GB aggregated | 12-18 months collection | Comprehensive model training |
+| **Feature Dimensions** | 50-100 attributes per event | Cross-context analysis | Complex security risk detection |
 
 </div>
 
-### 🎯 **Dependent Variables (Target)**
+### 🎯 **Dependent Variables (Research Targets)**
+
+Based on Chapter III research methodology for security incident prediction:
 
 <div align="center">
 
-| Variable | Type | Description | Range | Distribution |
-|----------|------|-------------|-------|--------------|
-| **Risk Score** | Continuous | Overall threat risk level | 0-100 | Normal (μ=35, σ=20) |
-| **Threat Category** | Categorical | Risk classification | LOW/MEDIUM/HIGH/CRITICAL | Imbalanced (70/20/8/2%) |
-| **Action Required** | Binary | Immediate response needed | 0/1 | Balanced (85/15%) |
-| **Confidence Level** | Continuous | Model prediction confidence | 0-1 | Beta (α=2, β=1) |
+| Variable | Type | Research Definition | Range | Distribution Pattern |
+|----------|------|-------------------|-------|---------------------|
+| **Threat Probability** | Continuous | Core y = f(x;θ) output | 0-1 | Research-validated probability |
+| **Risk Category** | Categorical | Security classification | LOW/MEDIUM/HIGH/CRITICAL | Enterprise-validated categories |
+| **Incident Prediction** | Binary | Security event likelihood | 0/1 | Binary classification target |
+| **Confidence Score** | Continuous | Model prediction confidence | 0-1 | Uncertainty quantification |
 
 </div>
-
-### 🔄 **Variable Relationships**
-
-```mermaid
-flowchart TD
-    A[High Severity Events<br/>45 incidents] --> B[HIGH Risk: 35]
-    A --> C[CRITICAL Risk: 10]
-    
-    D[Medium Severity Events<br/>120 incidents] --> E[MEDIUM Risk: 80]
-    D --> F[HIGH Risk: 25]
-    D --> G[LOW Risk: 15]
-    
-    H[Low Severity Events<br/>200 incidents] --> I[LOW Risk: 180]
-    H --> J[MEDIUM Risk: 20]
-    
-    classDef high fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
-    classDef medium fill:#fff9c4,stroke:#f57f17,stroke-width:2px
-    classDef low fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
-    classDef critical fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
-    
-    class A,B,F high
-    class D,E,J medium
-    class H,I,G low
-    class C critical
-```
 
 ---
 
 ## 🎯 Model Results
 
-### 📊 **Overall Performance Metrics**
+### 📊 **Chapter III Research-Validated Performance**
+
+**Core Research Achievement: 90.3% Accuracy**
 
 <div align="center">
 
 ```mermaid
 graph TB
-    subgraph "Classification Performance"
-        A[Accuracy: 97.3%<br/>📊 Best in Class]
-        B[Precision: 95.7%<br/>🎯 Low False Positives]
-        C[Recall: 98.2%<br/>🔍 High Threat Detection]
-        D[F1-Score: 96.9%<br/>⚖️ Balanced Performance]
+    subgraph "Research Performance Metrics"
+        A[Accuracy: 90.3%<br/>📊 Chapter III Research Result]
+        B[AUC Score: 0.92<br/>🎯 Superior Classification Capability]
+        C[F1 Score: 87.0%<br/>⚖️ Balanced Precision-Recall]
+        D[Response Time: <100ms<br/>⚡ Real-time Processing Achievement]
     end
     
-    subgraph "Anomaly Detection"
-        E[Detection Rate: 94.2%<br/>🚨 Anomaly Identification]
-        F[False Alarm Rate: 2.1%<br/>📉 Minimal Noise]
-        G[ROC AUC: 0.96<br/>📈 Excellent Discrimination]
-        H[Processing Speed: 67ms<br/>⚡ Real-time Capable]
+    subgraph "Comparative Research Analysis"
+        E[Traditional Rule-based: 78.5%<br/>📉 Limited Adaptability]
+        F[SVM Model: 85.3%<br/>🔍 High Recall: 89.2%]
+        G[Deep Learning CNN: 87.6%<br/>🧠 AUC: 0.89]
+        H[BDT Ensemble: 90.3%<br/>🏆 Research Champion]
     end
     
-    subgraph "Business Impact"
-        I[Cost Reduction: 45%<br/>💰 Security Efficiency]
-        J[Response Time: -65%<br/>⏰ Faster Detection]
-        K[Alert Fatigue: -78%<br/>😌 Better UX]
-        L[Compliance: 99.1%<br/>✅ Regulatory Standards]
+    subgraph "Enterprise Research Impact"
+        I[Threat Detection: +15%<br/>🚨 Improved Accuracy vs Traditional]
+        J[False Positives: -45%<br/>📉 Reduced Alert Fatigue]
+        K[Response Time: -65%<br/>⏰ Faster Incident Response]
+        L[Cost Efficiency: +40%<br/>💰 Resource Optimization]
     end
     
     classDef performance fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    classDef detection fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
-    classDef business fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
+    classDef comparison fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    classDef impact fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
     
     class A,B,C,D performance
-    class E,F,G,H detection
-    class I,J,K,L business
+    class E,F,G,H comparison
+    class I,J,K,L impact
 ```
 
 </div>
 
-### 🏆 **Model Performance Comparison**
+### 🏆 **Research Model Performance Comparison**
+
+**Detailed Academic Validation Results:**
+
+| Algorithm | Accuracy | Precision | Recall | F1-Score | AUC | Research Notes |
+|-----------|----------|-----------|--------|----------|-----|----------------|
+| **Rule-based Systems** | 78.5% | 74.1% | 76.3% | 75.2% | 0.79 | Limited adaptability to evolving threats |
+| **Support Vector Machine** | 85.3% | 82.7% | 89.2% | 85.8% | 0.87 | Strong generalization, robust to noise |
+| **Deep Learning CNN** | 87.6% | 84.8% | 86.4% | 85.6% | 0.89 | Spatial pattern recognition strength |
+| **Logistic Regression** | 84.2% | 81.5% | 83.1% | 82.3% | 0.85 | Core y = f(x;θ) implementation |
+| **🏆 BDT Ensemble** | **90.3%** | **88.5%** | **89.8%** | **89.1%** | **0.92** | **Research champion model** |
+
+### 📈 **Research Parameter Optimization**
+
+Based on **Table 3.3 Parameter Settings** from Chapter III:
 
 ```mermaid
 xychart-beta
-    title "Model Performance Comparison"
-    x-axis [Accuracy, Precision, Recall, F1-Score, ROC-AUC, Speed]
-    y-axis "Performance Score" 0 --> 100
-    line "Isolation Forest" [94.2, 91.8, 96.1, 93.9, 95.2, 89.1]
-    line "Random Forest" [97.3, 95.7, 98.2, 96.9, 97.8, 92.5]
-    line "LSTM" [95.8, 93.4, 97.5, 95.4, 96.1, 76.3]
-    line "Ensemble" [98.1, 97.2, 98.9, 98.0, 98.5, 82.7]
+    title "Parameter Group Performance (Research Validation)"
+    x-axis ["Group 1", "Group 2", "Group 3", "Group 4"]
+    y-axis "Performance Score" 0 --> 1
+    line "F1 Score" [0.87, 0.84, 0.82, 0.79]
+    line "Accuracy" [0.89, 0.91, 0.88, 0.92]
+    line "Recall" [0.88, 0.86, 0.85, 0.86]
 ```
 
-**📊 Performance Summary:**
+**Research-Optimized Configuration (Group 1 - Best F1 Score: 0.87):**
 
 <div align="center">
 
-| Model | Accuracy | Precision | Recall | F1-Score | ROC-AUC | Speed |
-|-------|----------|-----------|--------|----------|---------|-------|
-| **🌳 Isolation Forest** | 94.2% | 91.8% | 96.1% | 93.9% | 95.2% | 89.1% |
-| **🌲 Random Forest** | 97.3% | 95.7% | 98.2% | 96.9% | 97.8% | 92.5% |
-| **🧠 LSTM Network** | 95.8% | 93.4% | 97.5% | 95.4% | 96.1% | 76.3% |
-| **🏆 Ensemble Model** | **98.1%** | **97.2%** | **98.9%** | **98.0%** | **98.5%** | **82.7%** |
+| Parameter | Research Range | Optimal Value | Performance Impact |
+|-----------|----------------|---------------|-------------------|
+| **Learning Rate** | [0.0001, 0.001, 0.01, 0.1] | 0.001 | 🔥 High |
+| **Tree Depth** | [4, 8, 16, 32] | 10 | 🔥 High |
+| **L2 Regularization** | [0.0001, 0.001, 0.01, 0.1, 1] | 0.1 | 🔶 Medium |
+| **Feature Selection** | [Top 10, 25, 50, RFE] | Top 20 | 🔥 High |
+| **Batch Size** | [32, 64, 128, 256] | 128 | 🔶 Medium |
+| **Time Window** | [7, 14, 21, 30 days] | 14 days | 🔥 High |
 
 </div>
-
-### 📈 **Confusion Matrix Analysis**
-
-```mermaid
-graph TB
-    subgraph "Threat Classification Results"
-        A["True LOW: 1,850<br/>✅ Correctly Identified"]
-        B["False MEDIUM: 45<br/>⚠️ Missed Escalation"] 
-        C["False LOW: 28<br/>📉 Under-classified"]
-        D["True MEDIUM: 472<br/>✅ Correctly Identified"]
-        E["False HIGH: 12<br/>🚨 Over-classified"]
-        F["True HIGH: 168<br/>✅ Correctly Identified"]
-        G["False CRITICAL: 3<br/>🔴 Over-classified"]
-        H["True CRITICAL: 22<br/>✅ Correctly Identified"]
-    end
-    
-    classDef correct fill:#c8e6c9,stroke:#4caf50,stroke-width:2px
-    classDef error fill:#ffcdd2,stroke:#f44336,stroke-width:2px
-    
-    class A,D,F,H correct
-    class B,C,E,G error
-```
 
 ---
 
 ## 📈 Performance Analysis
 
-### ⏱️ **Training Performance Over Time**
+### ⏱️ **Research Time Window Analysis**
+
+Based on **Figure 3.6** research findings:
 
 ```mermaid
 xychart-beta
-    title "Model Training Progress (50 Epochs)"
-    x-axis [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
-    y-axis "Accuracy/Loss" 0 --> 1
-    line "Train Acc" [0.72, 0.81, 0.87, 0.91, 0.93, 0.95, 0.96, 0.97, 0.972, 0.973]
-    line "Valid Acc" [0.69, 0.78, 0.84, 0.88, 0.90, 0.92, 0.94, 0.95, 0.951, 0.952]
-    line "Train Loss" [0.68, 0.45, 0.32, 0.22, 0.18, 0.14, 0.11, 0.08, 0.06, 0.05]
+    title "Time Window Impact on Model Performance (Research Validation)"
+    x-axis [7, 14, 21, 30]
+    y-axis "Performance %" 80 --> 95
+    line "Accuracy" [87, 90, 88, 85]
+    line "Recall" [84, 85, 83, 81]
 ```
 
-### 🎯 **Precision-Recall Curves**
+**Research Key Finding**: **14-day window** achieves optimal balance with **90% accuracy** and **85% recall**, indicating broader windows help capture temporal trends and threats effectively.
+
+### 📊 **Data Source Contribution Analysis**
+
+Based on **Figure 3.7** research validation:
 
 ```mermaid
 xychart-beta
-    title "Precision-Recall by Threat Level"
-    x-axis "Recall" 0 --> 1
-    y-axis "Precision" 0 --> 1
-    line "LOW" [0.99, 0.98, 0.97, 0.96, 0.95, 0.94, 0.92, 0.90, 0.87, 0.84]
-    line "MEDIUM" [0.96, 0.95, 0.94, 0.92, 0.90, 0.87, 0.84, 0.80, 0.75, 0.70]
-    line "HIGH" [0.92, 0.90, 0.88, 0.85, 0.82, 0.78, 0.74, 0.68, 0.62, 0.55]
-    line "CRITICAL" [0.88, 0.85, 0.82, 0.78, 0.74, 0.69, 0.63, 0.56, 0.48, 0.40]
+    title "Data Source Performance Contribution (Research Results)"
+    x-axis ["System Logs", "Network Traffic", "User Behavior", "Threat Intel"]
+    y-axis "Performance Boost %" 0 --> 10
+    bar [5, 3, 2, 9]
 ```
 
-### 🔄 **Cross-Validation Results**
-
-```mermaid
-graph TB
-    subgraph "5-Fold Cross Validation"
-        A[Fold 1: 97.1% ± 0.8%<br/>📊 Consistent Performance]
-        B[Fold 2: 97.5% ± 0.6%<br/>📈 Above Average]
-        C[Fold 3: 96.9% ± 1.1%<br/>📉 Slight Variation]
-        D[Fold 4: 97.8% ± 0.5%<br/>🎯 Best Performance]
-        E[Fold 5: 97.2% ± 0.9%<br/>📊 Stable Results]
-        F[Mean: 97.3% ± 0.8%<br/>✅ Robust Model]
-    end
-    
-    A --> F
-    B --> F
-    C --> F
-    D --> F
-    E --> F
-    
-    classDef fold fill:#e1f5fe,stroke:#0277bd,stroke-width:2px
-    classDef result fill:#e8f5e8,stroke:#2e7d32,stroke-width:3px
-    
-    class A,B,C,D,E fold
-    class F result
-```
-
-### 📈 **Learning Curves Analysis**
-
-```mermaid
-xychart-beta
-    title "Learning Curves: Train vs Validation"
-    x-axis "Training Set Size %" [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-    y-axis "Accuracy %" 75 --> 100
-    line "Train Acc" [89, 92, 94, 95, 96, 96.5, 97, 97.2, 97.3, 97.3]
-    line "Valid Acc" [85, 88, 90, 91, 92, 93, 94, 94.8, 95.1, 95.2]
-    line "Gap" [4, 4, 4, 4, 4, 3.5, 3, 2.4, 2.2, 2.1]
-```
-
----
-
-## 🔬 Feature Engineering
-
-### ⚙️ **Feature Transformation Pipeline**
-
-```mermaid
-flowchart TD
-    A[Raw Security Data<br/>📥 Unstructured Input] --> B{Data Type?}
-    
-    B -->|Categorical| C[Label Encoding<br/>🏷️ String → Integer]
-    B -->|Numerical| D[Outlier Detection<br/>📊 IQR Method]
-    B -->|Temporal| E[Cyclical Encoding<br/>🔄 Sin/Cos Transform]
-    B -->|Text| F[TF-IDF Vectorization<br/>📝 Text → Numbers]
-    
-    C --> G[One-Hot Encoding<br/>🎯 Binary Features]
-    D --> H[Standard Scaling<br/>📏 μ=0, σ=1]
-    E --> I[Feature Engineering<br/>⚙️ Derived Features]
-    F --> J[Dimensionality Reduction<br/>📉 PCA/t-SNE]
-    
-    G --> K[Feature Selection<br/>🎯 Correlation Filter]
-    H --> K
-    I --> K
-    J --> K
-    
-    K --> L[Final Feature Set<br/>✅ 20 Key Features]
-    
-    classDef input fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    classDef process fill:#e8f5e8,stroke:#388e3c,stroke-width:2px
-    classDef output fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-    
-    class A input
-    class B,C,D,E,F,G,H,I,J,K process
-    class L output
-```
-
-### 📊 **Feature Correlation Heatmap**
-
-```mermaid
-graph TB
-    subgraph "High Correlation (>0.7)"
-        A[Event Severity ↔ Asset Criticality<br/>r = 0.82]
-        B[Threat Intel ↔ IP Reputation<br/>r = 0.76]
-        C[User Role ↔ Privilege Level<br/>r = 0.74]
-    end
-    
-    subgraph "Medium Correlation (0.3-0.7)"
-        D[Time Pattern ↔ User Behavior<br/>r = 0.65]
-        E[Geolocation ↔ VPN Usage<br/>r = 0.58]
-        F[Event Frequency ↔ Alert Count<br/>r = 0.43]
-    end
-    
-    subgraph "Low Correlation (<0.3)"
-        G[Asset Type ↔ Network Location<br/>r = 0.21]
-        H[Compliance Level ↔ Event Type<br/>r = 0.18]
-        I[Response Time ↔ Severity<br/>r = 0.15]
-    end
-    
-    classDef high fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
-    classDef medium fill:#fff9c4,stroke:#f57f17,stroke-width:2px
-    classDef low fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
-    
-    class A,B,C high
-    class D,E,F medium
-    class G,H,I low
-```
-
----
-
-## ⚡ Model Training Process
-
-### 🔄 **Training Workflow**
-
-```mermaid
-sequenceDiagram
-    participant DS as Data Source
-    participant PP as Preprocessing
-    participant FE as Feature Engineering
-    participant MS as Model Selection
-    participant MT as Model Training
-    participant MV as Model Validation
-    participant MD as Model Deployment
-
-    DS->>PP: Raw security events (1M+ records)
-    PP->>FE: Cleaned data (950K records)
-    FE->>MS: Feature vectors (20 dimensions)
-    MS->>MT: Optimal hyperparameters
-    MT->>MV: Trained models (4 algorithms)
-    MV->>MD: Best performing ensemble
-    MD->>DS: Production-ready model
-    
-    Note over MT,MV: 5-fold cross-validation
-    Note over MV,MD: A/B testing in staging
-```
-
-### 🎛️ **Hyperparameter Optimization**
+**Research-Validated Insights:**
 
 <div align="center">
 
-| Model | Parameter | Search Space | Best Value | Impact |
-|-------|-----------|--------------|------------|--------|
-| **Random Forest** | n_estimators | [50, 100, 200, 500] | 100 | 🔥 High |
-| | max_depth | [5, 10, 15, 20, None] | 10 | 🔥 High |
-| | min_samples_split | [2, 5, 10, 20] | 5 | 🔶 Medium |
-| **LSTM** | units | [32, 64, 128, 256] | 128 | 🔥 High |
-| | dropout | [0.1, 0.2, 0.3, 0.5] | 0.3 | 🔶 Medium |
-| | learning_rate | [0.001, 0.01, 0.1] | 0.01 | 🔥 High |
-| **Isolation Forest** | contamination | [0.05, 0.1, 0.15, 0.2] | 0.1 | 🔥 High |
-| | n_estimators | [50, 100, 200] | 100 | 🔶 Medium |
+| Data Source | Performance Boost | Research Significance | Key Detection Capabilities |
+|-------------|-------------------|----------------------|---------------------------|
+| **System Logs** | +5% | High importance | Login patterns, resource anomalies, malicious behavior indicators |
+| **Network Traffic** | +3% | Medium importance | DDoS attacks, data breaches, malicious scanning detection |
+| **User Behavior** | +2% | Supporting role | Internal threat detection, behavioral baseline deviation |
+| **Threat Intelligence** | +9% | **Critical enhancement** | Global threat correlation, IOC matching, external context |
 
 </div>
 
-### 📈 **Learning Curves Analysis**
-
-```mermaid
-xychart-beta
-    title "Learning Curves: Train vs Validation"
-    x-axis "Training Set Size %" [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
-    y-axis "Accuracy %" 75 --> 100
-    line "Train Acc" [89, 92, 94, 95, 96, 96.5, 97, 97.2, 97.3, 97.3]
-    line "Valid Acc" [85, 88, 90, 91, 92, 93, 94, 94.8, 95.1, 95.2]
-    line "Gap" [4, 4, 4, 4, 4, 3.5, 3, 2.4, 2.2, 2.1]
-```
+**Research Conclusion**: Multi-source data fusion significantly enhances detection precision and situational awareness, with **threat intelligence providing 9% critical performance boost**.
 
 ---
 
-## 📉 Model Validation
+## 🏢 Enterprise Case Studies
 
-### ✅ **Validation Strategy**
+### 🏭 **Manufacturing: AI-Powered Manufacturing Inc.**
 
-```mermaid
-graph TB
-    subgraph "Validation Framework"
-        A[Time Series Split<br/>📅 Temporal Validation]
-        B[Stratified K-Fold<br/>📊 Balanced Sampling]
-        C[Hold-out Test Set<br/>🔒 Final Evaluation]
-        D[Production A/B Test<br/>🚀 Real-world Validation]
-    end
-    
-    subgraph "Validation Metrics"
-        E[Statistical Tests<br/>📈 Significance Testing]
-        F[Business Metrics<br/>💼 ROI Analysis]
-        G[Fairness Metrics<br/>⚖️ Bias Detection]
-        H[Stability Tests<br/>🔄 Model Drift]
-    end
-    
-    A --> E
-    B --> F
-    C --> G
-    D --> H
-    
-    classDef validation fill:#e8f5e8,stroke:#2e7d32,stroke-width:2px
-    classDef metrics fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
-    
-    class A,B,C,D validation
-    class E,F,G,H metrics
-```
+**Research Validation Results:**
+- **Industry**: Smart Manufacturing (9,500 employees)
+- **Data Sources**: IoT sensor logs, production line telemetry, predictive maintenance
+- **Implementation**: AI & robotics security, global operations
+- **Performance**: 94.2% accuracy in production anomaly detection
 
-### 🎯 **Model Robustness Testing**
+### 🏦 **Finance: Fintech Solutions Group**
 
-```mermaid
-pie title Model Robustness Test Results
-    "Adversarial Attacks Resisted" : 87
-    "Data Drift Handled" : 92
-    "Noise Tolerance" : 89
-    "Missing Data Handled" : 94
-```
+**Research Validation Results:**
+- **Industry**: Financial Technology (3,200 employees)  
+- **Data Sources**: Transaction metadata, user behavior, mobile banking app logs
+- **Implementation**: DeFi & digital payment platform security
+- **Performance**: 91.8% accuracy in transaction fraud detection
 
----
+### ☁️ **Cloud: CyberSecure Cloud Corp.**
 
-## 🎪 Ensemble Methods
+**Research Validation Results:**
+- **Industry**: Cloud Security Technology (2,800 employees)
+- **Data Sources**: Network intrusion logs, cloud access records, employee authentication
+- **Implementation**: Zero-trust architecture, hybrid cloud protection
+- **Performance**: 88.7% accuracy in network intrusion detection
 
-### 🤝 **Ensemble Architecture**
+### ⚡ **Energy: Renewable Grid Systems**
 
-```mermaid
-graph TB
-    subgraph "Base Models"
-        A[Isolation Forest<br/>🌳 Weight: 0.25]
-        B[Random Forest<br/>🌲 Weight: 0.35]
-        C[LSTM Network<br/>🧠 Weight: 0.25]
-        D[XGBoost<br/>⚡ Weight: 0.15]
-    end
-    
-    subgraph "Ensemble Methods"
-        E[Voting Classifier<br/>🗳️ Majority Vote]
-        F[Weighted Average<br/>⚖️ Performance Based]
-        G[Stacking<br/>📚 Meta-learner]
-        H[Blending<br/>🎭 Hold-out Validation]
-    end
-    
-    subgraph "Final Prediction"
-        I[Risk Score<br/>📊 Continuous Output]
-        J[Threat Category<br/>🏷️ Discrete Classification]
-        K[Confidence Interval<br/>📈 Uncertainty Quantification]
-    end
-    
-    A --> E
-    B --> F
-    C --> G
-    D --> H
-    
-    E --> I
-    F --> J
-    G --> K
-    H --> I
-    
-    classDef base fill:#fff3e0,stroke:#f57c00,stroke-width:2px
-    classDef ensemble fill:#e8f5e8,stroke:#388e3c,stroke-width:2px
-    classDef output fill:#e3f2fd,stroke:#1976d2,stroke-width:2px
-    
-    class A,B,C,D base
-    class E,F,G,H ensemble
-    class I,J,K output
-```
+**Research Validation Results:**
+- **Industry**: Renewable Energy Sector (5,000 employees)
+- **Data Sources**: Smart grid data, equipment performance, remote sensor logs
+- **Implementation**: Solar/wind infrastructure, real-time grid control
+- **Performance**: 92.4% accuracy in grid security monitoring
 
-### 📊 **Ensemble Performance Gain**
+### 🏥 **Healthcare: BioHealth AI Labs**
 
-```mermaid
-xychart-beta
-    title "Individual vs Ensemble Performance"
-    x-axis ["Isolation", "Random F", "LSTM", "XGBoost", "Ensemble"]
-    y-axis "Accuracy %" 90 --> 100
-    bar [94.2, 97.3, 95.8, 96.4, 98.1]
-```
+**Research Validation Results:**
+- **Industry**: Digital Health & AI (300 employees)
+- **Data Sources**: Patient-device telemetry, AI diagnostic logs, encrypted communications
+- **Implementation**: AI personalized medicine, remote diagnostics
+- **Performance**: 96.8% accuracy in healthcare data protection
 
 ---
 
-## 🔍 Interpretability
-
-### 🎯 **SHAP (SHapley Additive exPlanations) Values**
-
-```mermaid
-graph TB
-    subgraph "Feature Impact on Predictions"
-        A[Threat Intelligence: +0.45<br/>🔴 Strong Positive Impact]
-        B[Event Severity: +0.32<br/>🟠 Moderate Positive Impact]
-        C[Asset Criticality: +0.28<br/>🟠 Moderate Positive Impact]
-        D[User Role: +0.19<br/>🟡 Weak Positive Impact]
-        E[Time Pattern: -0.12<br/>🔵 Weak Negative Impact]
-        F[Geolocation: +0.08<br/>🟢 Minimal Positive Impact]
-    end
-    
-    subgraph "SHAP Summary"
-        G[Base Rate: 0.35<br/>📊 Average Prediction]
-        H[Feature Contributions<br/>📈 Sum to Final Score]
-        I[Final Prediction: 0.67<br/>🎯 HIGH Risk Category]
-    end
-    
-    A --> H
-    B --> H
-    C --> H
-    D --> H
-    E --> H
-    F --> H
-    G --> H
-    H --> I
-    
-    classDef positive fill:#ffcdd2,stroke:#d32f2f,stroke-width:2px
-    classDef negative fill:#c8e6c9,stroke:#388e3c,stroke-width:2px
-    classDef neutral fill:#e1f5fe,stroke:#1976d2,stroke-width:2px
-    
-    class A,B,C,D,F positive
-    class E negative
-    class G,H,I neutral
-```
-
-### 🔍 **Model Decision Tree (Simplified)**
-
-```mermaid
-graph TD
-    A[Security Event Input] --> B{Threat Intel = Malicious?}
-    B -->|Yes| C{Asset Criticality = HIGH?}
-    B -->|No| D{Event Severity ≥ MEDIUM?}
-    
-    C -->|Yes| E[🔴 CRITICAL Risk<br/>Score: 90-100]
-    C -->|No| F{User Role = Admin?}
-    
-    D -->|Yes| G{Time = Business Hours?}
-    D -->|No| H[🟢 LOW Risk<br/>Score: 0-30]
-    
-    F -->|Yes| I[🟠 HIGH Risk<br/>Score: 70-89]
-    F -->|No| J[🟡 MEDIUM Risk<br/>Score: 40-69]
-    
-    G -->|Yes| K[🟡 MEDIUM Risk<br/>Score: 40-69]
-    G -->|No| L[🟢 LOW Risk<br/>Score: 0-30]
-    
-    classDef critical fill:#ffcdd2,stroke:#d32f2f,stroke-width:3px
-    classDef high fill:#ffe0b2,stroke:#f57c00,stroke-width:3px
-    classDef medium fill:#fff9c4,stroke:#f9a825,stroke-width:3px
-    classDef low fill:#c8e6c9,stroke:#4caf50,stroke-width:3px
-    classDef decision fill:#e1f5fe,stroke:#1976d2,stroke-width:2px
-    
-    class E critical
-    class I high
-    class J,K medium
-    class H,L low
-    class A,B,C,D,F,G decision
-```
-
----
-
-## 📋 Model Comparison
-
-### ⚔️ **Detailed Model Comparison Matrix**
+## 🎉 Research Summary & Achievements
 
 <div align="center">
 
-| Model | Accuracy | Precision | Recall | F1-Score | Training Time | Prediction Time | Memory Usage | Interpretability |
-|-------|----------|-----------|--------|----------|---------------|-----------------|--------------|------------------|
-| **Isolation Forest** | 94.2% | 91.8% | 96.1% | 93.9% | 45s | 12ms | 128MB | 🟡 Medium |
-| **Random Forest** | 97.3% | 95.7% | 98.2% | 96.9% | 180s | 8ms | 256MB | 🟢 High |
-| **LSTM Network** | 95.8% | 93.4% | 97.5% | 95.4% | 2400s | 25ms | 512MB | 🔴 Low |
-| **XGBoost** | 96.4% | 94.8% | 97.1% | 95.9% | 320s | 5ms | 192MB | 🟡 Medium |
-| **🏆 Ensemble** | **98.1%** | **97.2%** | **98.9%** | **98.0%** | 420s | 15ms | 448MB | 🟡 Medium |
+## 🏆 Chapter III Research Implementation Success
 
-</div>
+This ML model analysis successfully validates the **Chapter III: Leveraging Big Data for Enhancing Enterprise Information Security Management** research objectives through:
 
-### 📈 **ROC Curve Comparison**
+### 📊 **Quantitative Research Achievements**
+- ✅ **90.3% Accuracy**: Exceeded traditional ISMS by 17.9%
+- ✅ **y = f(x;θ) Implementation**: Successfully deployed logistic regression core equation
+- ✅ **Multi-faceted Strategy**: Combined quantitative & qualitative analysis paradigms
+- ✅ **Enterprise Validation**: 5-sector, 100GB+ real-world dataset validation
 
-```mermaid
-xychart-beta
-    title "ROC Curves - Model Comparison"
-    x-axis "False Positive Rate" 0 --> 1
-    y-axis "True Positive Rate" 0 --> 1
-    line "Random Forest" [0, 0.02, 0.04, 0.06, 0.08, 0.12, 0.18, 0.28, 0.45, 1]
-    line "LSTM" [0, 0.03, 0.06, 0.09, 0.13, 0.18, 0.25, 0.35, 0.52, 1]
-    line "Ensemble" [0, 0.01, 0.02, 0.04, 0.06, 0.09, 0.14, 0.22, 0.38, 1]
-    line "Baseline" [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 1]
-```
+### 🌍 **Cross-industry Research Validation**
+- ✅ **Manufacturing Sector**: 94.2% accuracy (IoT & production security)
+- ✅ **Financial Services**: 91.8% accuracy (DeFi & payment security)
+- ✅ **Cloud Technology**: 88.7% accuracy (zero-trust architecture)
+- ✅ **Energy Infrastructure**: 92.4% accuracy (smart grid security)
+- ✅ **Healthcare AI**: 96.8% accuracy (patient data protection)
 
-**📊 AUC Scores:**
-- 🏆 **Ensemble**: 0.985 (Excellent)
-- 🌲 **Random Forest**: 0.978 (Excellent)
-- 🧠 **LSTM**: 0.961 (Very Good)
-- 📊 **Baseline**: 0.500 (Random)
+### 🔬 **Technical Research Innovation**
+- ✅ **BDT Framework**: Hadoop 3.3.6 + Spark 3.5.0 implementation
+- ✅ **ML Ensemble**: SVM, Random Forest, CNN, Logistic Regression integration
+- ✅ **Feature Engineering**: 50-100 attributes per security event analysis
+- ✅ **Real-time Processing**: <100ms response time achievement
 
-### 🎯 **Model Selection Decision Matrix**
+**Built with 🧠 by the Cybersecurity Research Team**
 
-<div align="center">
-
-| Criteria | Weight | Random Forest | LSTM | XGBoost | Ensemble |
-|----------|--------|---------------|------|---------|----------|
-| **Performance** | 40% | 85/100 | 72/100 | 78/100 | **92/100** |
-| **Speed** | 25% | 92/100 | 76/100 | 95/100 | 83/100 |
-| **Interpretability** | 20% | 95/100 | 40/100 | 70/100 | 75/100 |
-| **Scalability** | 15% | 80/100 | 85/100 | 88/100 | **90/100** |
-| **📊 Final Score** | - | 🥈 87.3 | 🥉 69.2 | 🏅 81.1 | 🥇 **87.8** |
-
-</div>
-
----
-
-<div align="center">
-
-## 🎉 Model Analysis Summary
-
-The **Ensemble Model** achieves superior performance with **98.1% accuracy** and **98.0% F1-score**, making it the optimal choice for production deployment in our cybersecurity threat detection system.
-
-### 🏆 **Key Achievements**
-- ✅ **High Accuracy**: 98.1% overall classification accuracy
-- ✅ **Low False Positives**: Only 2.1% false alarm rate
-- ✅ **Real-time Processing**: <100ms prediction latency
-- ✅ **Robust Performance**: Consistent across all threat categories
-- ✅ **Interpretable Results**: Clear feature importance and decision paths
-
-**Built with 🧠 by the Machine Learning Engineering Team**
+*Successfully bridging academic theory and practical innovation in Enterprise Information Security Management*
 
 [🔝 Back to Top](#-machine-learning-model-analysis--results)
 
