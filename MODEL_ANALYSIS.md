@@ -368,20 +368,141 @@ xychart-beta
     line "Recall" [0.88, 0.86, 0.85, 0.86]
 ```
 
-**Research-Optimized Configuration (Group 1 - Best F1 Score: 0.87):**
+### 📊 **Detailed Parameter Group Analysis**
+
+The research evaluated **four distinct parameter configurations** based on Chapter III methodology. Each group represents a different combination of hyperparameters optimized for various aspects of model performance:
 
 <div align="center">
 
-| Parameter | Research Range | Optimal Value | Performance Impact |
-|-----------|----------------|---------------|-------------------|
-| **Learning Rate** | [0.0001, 0.001, 0.01, 0.1] | 0.001 | 🔥 High |
-| **Tree Depth** | [4, 8, 16, 32] | 10 | 🔥 High |
-| **L2 Regularization** | [0.0001, 0.001, 0.01, 0.1, 1] | 0.1 | 🔶 Medium |
-| **Feature Selection** | [Top 10, 25, 50, RFE] | Top 20 | 🔥 High |
-| **Batch Size** | [32, 64, 128, 256] | 128 | 🔶 Medium |
-| **Time Window** | [7, 14, 21, 30 days] | 14 days | 🔥 High |
+| Parameter Group | Configuration Focus | F1 Score | Accuracy | Recall | Best For |
+|-----------------|-------------------|----------|----------|--------|----------|
+| **🏆 Group 1** | **Balanced Performance** | **0.87** | 0.89 | 0.88 | **Production Deployment** |
+| **Group 2** | High Accuracy Priority | 0.84 | **0.91** | 0.86 | Precision-critical scenarios |
+| **Group 3** | Stable Performance | 0.82 | 0.88 | 0.85 | Conservative deployment |
+| **Group 4** | Maximum Accuracy | 0.79 | **0.92** | 0.86 | Research benchmarking |
 
 </div>
+
+### ⚙️ **Complete Parameter Group Specifications**
+
+#### **🏆 Group 1: Optimal Balanced Configuration (F1: 0.87)**
+*Recommended for production deployment due to best overall balance*
+
+<div align="center">
+
+| Parameter | Value | Rationale | Impact Level |
+|-----------|-------|-----------|--------------|
+| **Learning Rate** | 0.001 | Optimal convergence speed without overfitting | 🔥 High |
+| **Tree Depth** | 10 | Balance between model complexity and generalization | 🔥 High |
+| **L2 Regularization (Lambda)** | 0.1 | Prevents overfitting while maintaining performance | 🔶 Medium |
+| **Feature Selection** | Top 20 features | Optimal feature set based on importance ranking | 🔥 High |
+| **Batch Size** | 128 | Memory efficiency with stable gradient updates | 🔶 Medium |
+| **Time Window** | 14 days | Captures temporal patterns effectively | 🔥 High |
+| **Optimizer** | Adam | Adaptive learning rate with momentum | 🔶 Medium |
+
+</div>
+
+#### **📈 Group 2: High Accuracy Focus (Accuracy: 0.91)**
+*Optimized for scenarios requiring maximum prediction accuracy*
+
+<div align="center">
+
+| Parameter | Value | Rationale | Performance Trade-off |
+|-----------|-------|-----------|----------------------|
+| **Learning Rate** | 0.01 | Faster convergence, may sacrifice stability | Higher accuracy, lower F1 |
+| **Tree Depth** | 16 | Deeper trees for complex pattern capture | Better accuracy, potential overfitting risk |
+| **L2 Regularization** | 0.01 | Reduced regularization for maximum fitting | Higher accuracy, less generalization |
+| **Feature Selection** | Top 25 features | More features for comprehensive analysis | Better coverage, computational overhead |
+| **Batch Size** | 64 | Smaller batches for more frequent updates | More accuracy, longer training time |
+| **Dropout Rate** | 0.2 | Moderate dropout for complexity balance | Balanced performance |
+
+</div>
+
+#### **🔄 Group 3: Conservative Stable Configuration (Balanced: 0.82-0.88)**
+*Designed for stable, reliable performance across different environments*
+
+<div align="center">
+
+| Parameter | Value | Rationale | Stability Features |
+|-----------|-------|-----------|-------------------|
+| **Learning Rate** | 0.0001 | Very conservative learning for stability | Consistent convergence |
+| **Tree Depth** | 8 | Moderate depth to avoid overfitting | Stable across datasets |
+| **L2 Regularization** | 1.0 | Strong regularization for robustness | High generalization |
+| **Feature Selection** | Top 10 features | Core features only for reliability | Reduced complexity |
+| **Batch Size** | 256 | Large batches for stable gradients | Consistent training |
+| **Optimizer** | RMSProp | Stable optimizer for consistent performance | Predictable behavior |
+
+</div>
+
+#### **⚡ Group 4: Maximum Accuracy Research (Accuracy: 0.92)**
+*Research-focused configuration for achieving highest possible accuracy*
+
+<div align="center">
+
+| Parameter | Value | Rationale | Research Purpose |
+|-----------|-------|-----------|------------------|
+| **Learning Rate** | 0.1 | Aggressive learning for maximum performance | Push accuracy boundaries |
+| **Tree Depth** | 32 | Maximum depth for complex pattern learning | Research exploration |
+| **L2 Regularization** | 0.0001 | Minimal regularization for full model capacity | Maximum fitting capability |
+| **Feature Selection** | All 50 features (RFE) | Complete feature set analysis | Comprehensive evaluation |
+| **Batch Size** | 32 | Small batches for maximum gradient precision | Fine-tuned optimization |
+| **Dropout Rate** | 0.3 | Higher dropout to prevent severe overfitting | Research safety measure |
+
+</div>
+
+### 🎯 **Parameter Group Selection Guidelines**
+
+**For Production Deployment:**
+- **Choose Group 1** - Best balance of performance, stability, and computational efficiency
+- **F1 Score: 0.87** ensures good precision-recall balance for real-world threats
+
+**For High-Stakes Security:**
+- **Choose Group 2** - Maximum accuracy (0.91) for critical threat detection
+- **Trade-off**: Slightly lower F1 score but highest prediction accuracy
+
+**For Resource-Constrained Environments:**
+- **Choose Group 3** - Stable performance with minimal computational requirements
+- **Conservative approach** with reliable 0.82-0.88 performance range
+
+**For Research & Benchmarking:**
+- **Choose Group 4** - Pushes model to maximum capacity (0.92 accuracy)
+- **Experimental configuration** for exploring model capabilities
+
+### 📊 **Performance vs Resource Trade-offs**
+
+```mermaid
+graph TB
+    subgraph "Performance Metrics"
+        A[Group 1: F1=0.87<br/>⚖️ Best Balance]
+        B[Group 2: Acc=0.91<br/>🎯 Highest Accuracy]
+        C[Group 3: Stable=0.85<br/>🔄 Most Reliable]
+        D[Group 4: Acc=0.92<br/>🚀 Research Peak]
+    end
+    
+    subgraph "Resource Requirements"
+        E[Training Time: Medium<br/>💻 Production Ready]
+        F[Training Time: High<br/>⚡ Accuracy Focus]
+        G[Training Time: Low<br/>💡 Efficient]
+        H[Training Time: Very High<br/>🔬 Research]
+    end
+    
+    A --> E
+    B --> F
+    C --> G
+    D --> H
+    
+    classDef optimal fill:#e8f5e8,stroke:#2e7d32,stroke-width:3px
+    classDef accuracy fill:#e3f2fd,stroke:#1565c0,stroke-width:2px
+    classDef stable fill:#fff3e0,stroke:#ef6c00,stroke-width:2px
+    classDef research fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px
+    
+    class A,E optimal
+    class B,F accuracy
+    class C,G stable
+    class D,H research
+```
+
+**Research Conclusion**: **Group 1** provides the optimal balance for enterprise deployment, achieving **0.87 F1 Score** while maintaining computational efficiency and deployment reliability.
 
 ---
 

@@ -617,6 +617,23 @@ xychart-beta
 - Feature Selection: Top 20 features
 - **Result**: F1 Score of 0.87, balanced performance
 
+### 🔧 **Parameter Group Configurations**
+
+The research evaluated **4 distinct parameter groups** optimized for different deployment scenarios:
+
+<div align="center">
+
+| Group | Focus | F1 Score | Accuracy | Best Use Case |
+|-------|-------|----------|----------|---------------|
+| **🏆 Group 1** | **Balanced Performance** | **0.87** | 0.89 | **Production Deployment** |
+| **Group 2** | High Accuracy | 0.84 | **0.91** | Precision-critical scenarios |
+| **Group 3** | Stable Performance | 0.82 | 0.88 | Resource-constrained environments |
+| **Group 4** | Maximum Accuracy | 0.79 | **0.92** | Research benchmarking |
+
+</div>
+
+**Recommended Configuration**: **Group 1** provides optimal balance for enterprise deployment with 0.87 F1 Score and efficient resource utilization.
+
 ---
 
 ## 🎯 Enterprise Case Studies
