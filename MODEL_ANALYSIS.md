@@ -578,7 +578,7 @@ graph TB
 xychart-beta
     title "Qruplar üzrə Sabitlik Göstəriciləri"
     x-axis ["Group 1", "Group 2", "Group 3", "Group 4"]
-    y-axis "Coefficient" 0.7 1.0
+    y-axis "Coefficient" 0.70 --> 1.00
     line "Variance Stability" [0.92, 0.87, 0.95, 0.81]
     line "Cross-validation Consistency" [0.89, 0.85, 0.91, 0.78]
     line "Temporal Stability" [0.88, 0.82, 0.93, 0.76]
@@ -783,7 +783,7 @@ Total_Score = w1×Accuracy + w2×Speed + w3×Stability + w4×Efficiency + w5×Pr
 xychart-beta
     title "Qrupların Zaman üzrə Performans Trendinə"
     x-axis ["Week 1", "Week 4", "Week 8", "Week 12", "Week 16", "Week 20"]
-    y-axis "Performance Score" 0.75 0.95
+    y-axis "Performance Score" 0.75 --> 0.95
     line "Group 1" [0.84, 0.86, 0.87, 0.87, 0.87, 0.87]
     line "Group 2" [0.88, 0.90, 0.91, 0.91, 0.90, 0.91]
     line "Group 3" [0.82, 0.83, 0.84, 0.85, 0.85, 0.85]
@@ -1174,7 +1174,7 @@ graph LR
 xychart-beta
     title "Feature Selection Impact on Model Performance"
     x-axis [10, 20, 30, 40, 50, 60, 70, 80]
-    y-axis "Accuracy %" 75 95
+    y-axis "Accuracy %" 75 --> 95
     line [78.2, 82.5, 86.1, 89.3, 90.3, 90.1, 89.8, 89.2]
 ```
 
@@ -1258,7 +1258,7 @@ Final Prediction: Weighted Combination
 xychart-beta
     title "Ensemble vs Individual Model Performance"
     x-axis ["Accuracy", "Precision", "Recall", "F1-Score", "Stability"]
-    y-axis "Score %" 80 95
+    y-axis "Score %" 80 --> 95
     bar [82.1, 84.9, 85.2, 84.7, 79.3]
     bar [85.3, 84.9, 85.7, 85.3, 83.1]
     bar [87.6, 87.2, 88.0, 87.6, 85.7]
